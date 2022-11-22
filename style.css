@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 50rem;
+}
+
+div.container {
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 32rem;
+  height: 55rem;
+  display: grid;
+  background-color: black;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  color: white;
+  border-radius: 50px;
+}
+
+.screen {
+  border: 2px solid grey;
+  grid-column: span 30;
+  width: 30rem;
+  height: 20rem;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.top {
+  border: 2px solid white;
+  margin: 1rem;
+  height: 50%;
+  border-radius: 1rem 0;
+  vertical-align: middle;
+  font-size: 5rem;
+  margin-right: 1rem;
+}
+
+.bottom {
+  height: 50%;
+  border-radius: 1rem 0;
+  font-size: 5rem;
+  margin-right: 1rem;
+  border: 2px solid darkgray;
+}
+
+.buttons {
+  display: grid;
+  height: 32rem;
+  width: 28rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 0;
+}
+
+.tus {
+  display: flex;
+  grid-column: span 3;
+  grid-row: span 2;
+  background-color: #333;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.tus17 {
+  align-items: center;
+  justify-content: left;
+  grid-column: span 6;
+  border-radius: 3.5rem;
+  padding-left: 2.7rem;
+}
+
+.tus1,
+.tus2,
+.tus3 {
+  background-color: grey;
+  color: black;
+}
+
+.tus4,
+.tus8,
+.tus12,
+.tus16,
+.tus19 {
+  background-color: orange;
+}
+
+.tus:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
